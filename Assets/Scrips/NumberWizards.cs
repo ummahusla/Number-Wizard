@@ -2,10 +2,10 @@
 using System.Collections;
 
 public class NumberWizards : MonoBehaviour {
-
-	int min = 1;
-	int max = 1000;
-	int guess = 500;
+	// Declaring global variables
+	int min;
+	int max;
+	int guess;
 	
 	// Use this for initialization
 	void Start () {
@@ -15,13 +15,18 @@ public class NumberWizards : MonoBehaviour {
 	// Printing out the game description
 	void StartGame() {
 	
-		max = max + 1;
+		min = 1;
+		max = 1000;
+		guess = 500;
 		
+		print("---------------------");
 		print("Welcome to Number Wizard!");
 		print("Pick a number in your head, but don't tell to me.");
 		print("The lowest number you can pick is " + min + " while the highest number is " + max + ".");
 		print("Is the number is higher or lower than "+ guess + "?");
 		print("Up arrow = higher, down = lower, return = equal.");
+		
+		max = max + 1;
 		
 	}
 	
@@ -36,6 +41,7 @@ public class NumberWizards : MonoBehaviour {
 			NextGuess();
 		} else if(Input.GetKeyDown(KeyCode.Return)) {
 			print("Victory!");
+			StartGame();
 		}
 		
 	}
