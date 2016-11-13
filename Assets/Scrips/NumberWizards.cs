@@ -25,30 +25,26 @@ public class NumberWizards : MonoBehaviour {
 		
 	}
 	
-	// Make the next guess
-	void NextGuess() {
-		guess = (max + min) / 2;
-		print("Higher or lower than " + guess);
-	}
-	
 	// Update is called once per frame
 	void Update () {
 	
 		if(Input.GetKeyDown(KeyCode.UpArrow)) {
-		
 			min = guess;
 			NextGuess();
-			
 		} else if(Input.GetKeyDown(KeyCode.DownArrow)) {
-		
 			max = guess;
 			NextGuess();
-			
 		} else if(Input.GetKeyDown(KeyCode.Return)) {
-		
 			print("Victory!");
-			
 		}
 		
 	}
+	
+	// Make the next guess
+	void NextGuess() {
+		guess = (max + min) / 2;
+		print("Higher or lower than " + guess);
+		print("Up arrow = higher, down = lower, return = equal.");
+	}
+	
 }
