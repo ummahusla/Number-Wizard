@@ -20,14 +20,16 @@ public class NumberWizards : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		if(Input.GetKey(KeyCode.UpArrow)) {
+		if(Input.GetKeyDown(KeyCode.UpArrow)) {
 			print("Up arrow is pressed.");
 		}
-		if(Input.GetKey(KeyCode.DownArrow)) {
+		
+		if(Input.GetKeyDown(KeyCode.DownArrow)) {
 			print("Down arrow is pressed.");	
 		}
-		if(Input.GetKey(KeyCode.Return)) {
-			print("Return key is pressed");
+		
+		if(Input.GetKeyDown(KeyCode.Return)) {
+			print("Return key is pressed.");
 		}
 		
 	}
