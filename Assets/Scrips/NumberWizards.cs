@@ -28,6 +28,7 @@ public class NumberWizards : MonoBehaviour {
 	// Make the next guess
 	void NextGuess() {
 		guess = (max + min) / 2;
+		print("Higher or lower than " + guess);
 	}
 	
 	// Update is called once per frame
@@ -37,13 +38,11 @@ public class NumberWizards : MonoBehaviour {
 		
 			min = guess;
 			NextGuess();
-			print("Higher or lower than " + guess);
 			
 		} else if(Input.GetKeyDown(KeyCode.DownArrow)) {
 		
 			max = guess;
 			NextGuess();
-			print("Higher or lower than " + guess);
 			
 		} else if(Input.GetKeyDown(KeyCode.Return)) {
 		
