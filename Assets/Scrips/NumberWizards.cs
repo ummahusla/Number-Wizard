@@ -22,13 +22,9 @@ public class NumberWizards : MonoBehaviour {
 	
 		if(Input.GetKeyDown(KeyCode.UpArrow)) {
 			print("Up arrow is pressed.");
-		}
-		
-		if(Input.GetKeyDown(KeyCode.DownArrow)) {
+		} else if(Input.GetKeyDown(KeyCode.DownArrow)) {
 			print("Down arrow is pressed.");	
-		}
-		
-		if(Input.GetKeyDown(KeyCode.Return)) {
+		} else if(Input.GetKeyDown(KeyCode.Return)) {
 			print("Return key is pressed.");
 		}
 		
