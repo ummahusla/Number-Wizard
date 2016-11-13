@@ -11,7 +11,11 @@ public class NumberWizards : MonoBehaviour {
 		int max = 1000;
 		int min = 1;
 		
-		print("The highest number you can pick is " + max + ".");
+		print("The lowest number you can pick is " + min + " while the highest number is " + max + ".");
+		
+		print("Is the number is higher or lower than 500");
+		print("Up arrow for higher, down for lower, return for equal");
+
 	}
 	
 	// Update is called once per frame
